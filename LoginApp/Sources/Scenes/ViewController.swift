@@ -9,11 +9,22 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var userNameTF: UITextField!
+    @IBOutlet weak var PasswordTF: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
-
-
+    
+    @IBAction func hintOfName(_ sender: Any) {
+    }
+    
+    @IBAction func hintOfPassword(_ sender: Any) {
+    }
+    
+    @IBAction func logInButtonPressed(_ sender: Any) {
+    }
+    
 }
 
