@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		777929062CDBE3B0001D0882 /* GreetingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777929052CDBE3B0001D0882 /* GreetingViewController.swift */; };
+		770E12792CE268C200A43F19 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770E12782CE268C200A43F19 /* AuthViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		770E12782CE268C200A43F19 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		7779289A2CDA9CA4001D0882 /* LoginApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		777929052CDBE3B0001D0882 /* GreetingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -50,7 +50,7 @@
 		777928912CDA9CA4001D0882 = {
 			isa = PBXGroup;
 			children = (
-				777929052CDBE3B0001D0882 /* GreetingViewController.swift */,
+				770E12782CE268C200A43F19 /* AuthViewController.swift */,
 				7779289C2CDA9CA4001D0882 /* LoginApp */,
 				7779289B2CDA9CA4001D0882 /* Products */,
 			);
@@ -138,7 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				777929062CDBE3B0001D0882 /* GreetingViewController.swift in Sources */,
+				770E12792CE268C200A43F19 /* AuthViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
