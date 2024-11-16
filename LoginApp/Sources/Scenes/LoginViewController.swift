@@ -8,43 +8,51 @@
 import UIKit
 
 class LoginViewController: UIViewController {
-
-    @IBOutlet weak var userName: UITextField!
-    @IBOutlet weak var password: UITextField!
     
-    let passwordValue = "123456"
-    let userNameValue = "Pupa"
+    // MARK: - UI
+    @IBOutlet weak var userNameTF: UITextField!
+    @IBOutlet weak var passwordTF: UITextField!
     
+    // MARK: - Properties
+            let userNameValue = "Pupa"
+    private let passwordValue = "123456"
+    
+    // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
     
+    // MARK: - Actions
     @IBAction func hintOfName(_ sender: Any) {
+        
+        showAlert(title: "Oops!",message: "Your name is Pupa")
         
     }
     
     @IBAction func hintOfPassword(_ sender: Any) {
-        
+        showAlert(title: "Oops!",message: "Your password is 123456")
     }
     
-    @IBAction func logInButtonPressed(for segue: UIStoryboardSegue, sender: Any) {
-        if userName.text == userNameValue, password.text == passwordValue {
-            let greetingVC = segue.destination as? GreetingViewController
-        } else {
-            //            present(alert, animated: true, completion: nil)
+    @IBAction func loginButtonPressed() {
+        
+        guard userNameTF.text == userNameValue && passwordTF.text == passwordValue else {
+            showAlert(title: "Access denied",message: "Wrong login or password")
+            return
         }
-        
     }
-    
-    private func showAlert(title: String, message: String) {
+}
+
+// MARK: - Alert
+private extension LoginViewController {
+    func showAlert(title: String, message: String) {
         let alert = UIAlertController(title: title,
                                       message: message,
                                       preferredStyle: .alert)
         
+        let okButton = UIAlertAction(title: "Ok", style: .default)
         
+        alert.addAction(okButton)
+        
+        present(alert, animated: true)
     }
-    
 }
-
-
